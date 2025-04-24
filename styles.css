@@ -222,21 +222,3 @@ body {
   display: block;
   border: none;
 }
-
-/* === RESPONSIVITA === */
-@media (max-width: 850px) {
-  body { font-size: 15px; }
-  .circle-hero-wrap { max-width: 90vw; margin-top: 6vw; }
-  .circle-hero-text { font-size: 6vw; width: 100%; left: 50%; }
-  .star-divider, .giant-star .star-divider { width: 68vw !important; max-width: 360px;}
-  .team-section { flex-direction: column; align-items: center; gap: 4vw; padding: 5vw 0; max-width: 98vw;}
-  .team-photo-wrap, .big-photo-frame { width: 95vw; min-width: 120px; max-width: 350px; }
-  .team-photo, .big-photo { width: 100%; max-width: 90vw; min-width: 110px; border-radius: 24px; }
-  .team-text { max-width: 96vw; font-size: 4vw; padding-left: 0; margin-left: 0; text-align: center;}
-  .decor-top-left, .decor-top-right, .decor-bottom-left, .decor-bottom-right {
-    min-width: 90px; max-width: 140px; top: 2vw; left: 2vw; right: 2vw; bottom: 2vw;
-  }
-  .kokoza-logo-wrap { left: 2vw; top: 90vw; width: 40vw; min-width: 60px; max-width: 160px; }
-  .kokoza-logo { width: 40vw; min-width: 60px; max-width: 160px; }
-}
-
