@@ -652,4 +652,91 @@ body {
     max-width: 160px;
   }
 }
+/* RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ */
+@media (max-width: 700px) {
+  /* Fialový kruh nahoře */
+  .circle-hero-wrap {
+    width: 92vw;            /* zvětší nebo zmenší šířku kruhu */
+    margin-top: 7vw;        /* větší číslo = kruh níž, menší = výš */
+  }
+  .circle-hero-text {
+    font-size: 7vw;         /* zvětší/zmenší text v kruhu */
+  }
+
+  /* Dekorační obrázky (např. rohy, ozdoby) */
+  .decor-top-left,
+  .decor-top-right,
+  .decor-bottom-left,
+  .decor-bottom-right {
+    width: 18vw;            /* zvětší/zmenší obrázek */
+    min-width: 50px;
+    max-width: 80px;
+    /* pozice */
+    top: 3vw !important;    /* posun shora – větší číslo níž */
+    left: 2vw !important;   /* posun zleva */
+    right: 2vw !important;  /* posun zprava */
+    bottom: 2vw !important; /* posun zdola */
+  }
+
+  /* Modrá hvězda */
+  .star-divider-wrap {
+    margin: 6vw 0 2vw 0;   /* první číslo = shora, druhé = zdola */
+  }
+  .star-divider {
+    width: 62px;           /* změna velikosti hvězdy */
+    height: 62px;
+  }
+
+  /* Kokoza logo */
+  .kokoza-logo-wrap {
+    top: 95vw;              /* větší číslo = logo níž pod hlavním obsahem */
+    width: 66px;            /* šířka loga */
+    left: 3vw;              /* více vlevo/vpravo */
+  }
+  .kokoza-logo {
+    width: 66px;            /* zvětší/zmenší logo */
+  }
+
+  /* Sekce tým */
+  .team-section {
+    flex-direction: column; /* vše pod sebe */
+    align-items: center;
+    gap: 4vw;               /* mezera mezi fotkou a textem */
+    max-width: 98vw;
+    margin: 3vw auto;
+    padding: 2vw 0;
+  }
+  .team-photo-wrap {
+    width: 90vw;            /* šířka fotky */
+    max-width: 96vw;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+  .team-photo {
+    border-radius: 18px;    /* zakulacení rohů fotky */
+    width: 95vw;            /* šířka fotky */
+    max-width: 96vw;
+  }
+
+  /* Text u týmu */
+  .team-text {
+    max-width: 97vw;
+    margin-left: 0;
+    text-align: center;
+    padding: 1vw 2vw;
+  }
+  .team-text h2 {
+    font-size: 1.25rem;     /* nadpis – zvětši/zmenši podle chuti */
+  }
+  .team-text p {
+    font-size: 1rem;        /* hlavní text – zvětši/zmenši podle chuti */
+  }
+
+  /* Dekorace za textem */
+  .decor-under-svg {
+    left: 0;                /* posun více doleva/doprava */
+    width: 98vw;            /* zvětši/zmenši žlutý tvar pod textem */
+    max-width: 100vw;
+  }
+}
 
