@@ -740,3 +740,113 @@ body {
     margin: 0 auto;
   }
 }
+/* ---------------------------
+   RESPONSIVE ÚPRAVY NA MOBIL
+-----------------------------*/
+@media (max-width: 700px) {
+
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  /* HERO kruh */
+  .circle-hero-wrap {
+    max-width: 90vw;
+    margin: 8vw auto 3vw auto;
+  }
+  .circle-hero-img {
+    width: 100vw;
+    max-width: 88vw;
+    height: auto;
+    display: block;
+  }
+  .circle-hero-text {
+    font-size: 5.7vw;
+    width: 90vw;
+    left: 50%;
+  }
+
+  /* Dekorace Kreslicí plátno */
+  .decor-top-left {
+    width: 18vw !important;
+    min-width: 54px !important;
+    max-width: 88px !important;
+    top: 4vw !important;
+    left: 2vw !important;
+  }
+  .decor-top-right,
+  .decor-bottom-right,
+  .decor-bottom-left {
+    display: none !important; /* skryj pro lepší vzhled */
+  }
+
+  /* Sekce Kokoza + hvězda */
+  .star-divider-wrap {
+    flex-direction: row;
+    width: 100vw;
+    margin: 4vw 0 4vw 0;
+    justify-content: center;
+    align-items: center;
+    gap: 7vw;
+  }
+  .star-divider {
+    width: 19vw !important;
+    min-width: 50px !important;
+    max-width: 90px !important;
+  }
+  .kokoza-logo-wrap {
+    width: 36vw;
+    min-width: 90px;
+    max-width: 140px;
+    margin: 0 3vw 0 4vw;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+  }
+  .kokoza-logo {
+    width: 100%;
+    min-width: 60px;
+    max-width: 120px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* TEAM sekce */
+  .team-section {
+    flex-direction: column;
+    gap: 5vw;
+    max-width: 96vw;
+    padding: 8vw 2vw 0 2vw;
+    align-items: center;
+  }
+  .team-photo-wrap {
+    width: 92vw;
+    max-width: 96vw;
+    margin-bottom: 3vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .team-photo {
+    width: 96vw;
+    border-radius: 24px;
+  }
+  .team-text {
+    max-width: 94vw;
+    padding-left: 0;
+    text-align: center;
+    margin-left: 0;
+  }
+  .team-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5vw;
+  }
+  .team-text p {
+    font-size: 1rem;
+    margin-bottom: 2vw;
+  }
+}
