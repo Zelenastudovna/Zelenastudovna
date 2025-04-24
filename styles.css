@@ -653,3 +653,90 @@ body {
   }
 }
 
+/* --- Základní mobilní responsivita --- */
+@media (max-width: 800px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  .circle-hero-wrap {
+    max-width: 90vw;
+    min-width: 60vw;
+    margin: -10vh auto 0 auto;
+  }
+  .circle-hero-text {
+    font-size: 6vw;
+    width: 98%;
+  }
+
+  .decor-top-left,
+  .decor-top-right,
+  .decor-bottom-left,
+  .decor-bottom-right {
+    min-width: 80px !important;
+    max-width: 120px !important;
+    width: 20vw !important;
+    top: 2vh !important;
+    left: 2vw !important;
+    right: 2vw !important;
+    bottom: 2vh !important;
+  }
+
+  .star-divider-wrap {
+    margin: 1vw 0 2vw 0;
+  }
+  .star-divider {
+    width: 38vw !important;
+    min-width: 60px;
+    max-width: 120px;
+  }
+
+  .team-section {
+    flex-direction: column;
+    gap: 2vw;
+    max-width: 96vw;
+    padding: 4vw 2vw 0 2vw;
+    align-items: center;
+  }
+  .team-photo-wrap {
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 94vw;
+    margin-bottom: 2vw;
+  }
+  .team-photo {
+    width: 90vw;
+    max-width: 92vw;
+    border-radius: 32px;
+  }
+  .team-text {
+    max-width: 94vw;
+    padding-left: 0;
+    text-align: center;
+    margin-left: 0;
+  }
+  .team-text h2 {
+    font-size: 2rem;
+    margin-bottom: 2vw;
+  }
+  .team-text p {
+    font-size: 1rem;
+  }
+
+  .kokoza-logo-wrap {
+    width: 90vw;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 6vw;
+  }
+  .kokoza-logo {
+    width: 34vw;
+    min-width: 80px;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
