@@ -1,0 +1,64 @@
+---
+title: ""
+format: html
+---
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+
+<!-- Dekorace nahoře -->
+<img src="images/Kreslicí plátno 1 kopie 2.svg" class="decor-top-left" alt=""/>
+<img src="images/Kreslicí plátno 1 kopie 4.svg" class="decor-top-right" alt=""/>
+<img src="images/Kreslicí plátno 1 kopie 57.svg" class="decor-bottom-right" alt=""/>
+
+<!-- Hlavní kruh s nadpisem -->
+<div class="circle-hero-wrap">
+<img id="kruh" src="images/Kreslicí plátno 1 kopie 27.svg" class="circle-hero-img" alt="Fialový kruh"/>
+<div class="circle-hero-text">ZELENÁ STUDOVNA</div>
+</div>
+
+<!-- Dekorace dole -->
+<img src="images/Kreslicí plátno 1 kopie 7.svg" class="decor-bottom-left" alt=""/>
+
+<!-- Točící se MODRÁ HVĚZDA mezi sekcemi -->
+<div class="star-divider-wrap">
+<img src="images/Kreslicí plátno 1 kopie 30.svg" class="star-divider" id="star-rotate" alt="Modrá hvězda"/>
+</div>
+
+<!-- Sekce tým -->
+<div class="team-section">
+<div class="team-photo-frame">
+<img src="images/Zelený GenZ_WS10-1088.jpg" class="team-photo" alt="Náš tým"/>
+</div>
+
+<div class="team-text">
+<div class="decor-under-text">
+<img src="images/Kreslicí plátno 1 kopie 14.svg" class="decor-under-svg" alt="Dekorace"/>
+</div>
+<p>
+Ahoj!
+Jsme parta mladých lidí z různých oborů, které spojila chuť něco změnit, a tak vzniká pod našima rukama Zelená studovna.
+</p>
+</div>
+</div>
+<div class="kokoza-logo-wrap">
+<img src="images/logo_hlavni_smaragdova_RGB.png" class="kokoza-logo" id="kokoza-logo-spin" alt="Kokoza logo"/>
+</div>
+
+<script>
+window.addEventListener('scroll', () => {
+const scroll = window.scrollY || window.pageYOffset;
+const deg = scroll * 0.6; // uprav rychlost podle potřeby
+const star = document.getElementById('star-rotate');
+if (star) {
+star.style.transform = `rotate(${deg}deg)`;
+}
+});
+</script>
+
+
+
+
+
+
+
+
+
