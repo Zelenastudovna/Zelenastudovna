@@ -136,27 +136,77 @@ body {
 
 /* RESPONSIVITA PRO MOBILNÍ ZAŘÍZENÍ */
 @media (max-width: 700px) {
+
+  /* Fialový kruh */
   .circle-hero-wrap {
     width: 100vw;
     max-width: 100vw;
     margin-top: 4vw;
   }
+
+  /* Text v kruhu – menší */
   .circle-hero-text {
-    font-size: 7vw;
+    font-size: 5vw;        /* zmenšeno z 7vw na 5vw */
   }
 
-  /* Dekorace – každá zvlášť */
-  .decor-top-left { position: absolute; top: 4vw; left: 3vw; width: 28vw; min-width: 60px; max-width: 100px; z-index: 30; }
-  .decor-top-right { position: absolute; top: 5vw; right: 3vw; width: 24vw; min-width: 60px; max-width: 100px; z-index: 30; }
-  .decor-bottom-left { position: absolute; bottom: 8vw; left: 6vw; width: 30vw; min-width: 60px; max-width: 120px; z-index: 30; }
-  .decor-bottom-right { position: absolute; bottom: 8vw; right: 6vw; width: 24vw; min-width: 60px; max-width: 100px; z-index: 30; }
+  /* Dekorace – každá zvlášť, SPODNÍ výš! */
+  .decor-top-left {
+    position: absolute;
+    top: 4vw;
+    left: 3vw;
+    width: 28vw;
+    min-width: 60px;
+    max-width: 100px;
+    z-index: 30;
+  }
+  .decor-top-right {
+    position: absolute;
+    top: 5vw;
+    right: 3vw;
+    width: 24vw;
+    min-width: 60px;
+    max-width: 100px;
+    z-index: 30;
+  }
+  .decor-bottom-left {
+    position: absolute;
+    bottom: 32vw; /* výš - z 8vw na 32vw */
+    left: 6vw;
+    width: 30vw;
+    min-width: 60px;
+    max-width: 120px;
+    z-index: 30;
+  }
+  .decor-bottom-right {
+    position: absolute;
+    bottom: 32vw; /* výš - z 8vw na 32vw */
+    right: 6vw;
+    width: 24vw;
+    min-width: 60px;
+    max-width: 100px;
+    z-index: 30;
+  }
 
-  /* Modrá hvězda */
-  .star-divider { width: 200px; height: 200px; }
+  /* Modrá hvězda – výš */
+  .star-divider-wrap {
+    margin-top: -12vw;  /* posune hvězdu výš, dříve třeba 6vw */
+    margin-bottom: 2vw;
+  }
+  .star-divider {
+    width: 200px;
+    height: 200px;
+  }
 
   /* Kokoza logo */
-  .kokoza-logo-wrap { top: 110vw; left: 2vw; width: 250px; }
-  .kokoza-logo { width: 250px; height: auto; }
+  .kokoza-logo-wrap {
+    top: 110vw;
+    left: 2vw;
+    width: 250px;
+  }
+  .kokoza-logo {
+    width: 250px;
+    height: auto;
+  }
 
   /* Sekce tým */
   .team-section {
@@ -168,9 +218,19 @@ body {
     padding: 2vw 0;
     position: relative;
   }
-  .team-photo-wrap { width: 90vw; max-width: 96vw; justify-content: center; margin-bottom: 2vw; }
-  .team-photo { border-radius: 18px; width: 95vw; max-width: 96vw; }
+  .team-photo-wrap {
+    width: 90vw;
+    max-width: 96vw;
+    justify-content: center;
+    margin-bottom: 2vw;
+  }
+  .team-photo {
+    border-radius: 18px;
+    width: 95vw;
+    max-width: 96vw;
+  }
 
+  /* Text sekce tým – níž */
   .team-text {
     text-align: left;
     margin-left: 10vw;
@@ -178,17 +238,21 @@ body {
     font-size: 1.2rem;
     position: relative;
     z-index: 5;
+    margin-top: 8vw;     /* text níž pod fotku */
   }
   .team-text h2 { font-size: 1.25rem; }
   .team-text p { font-size: 1rem; }
 
+  /* Dekorace za textem – větší, pootočená */
   .decor-under-svg {
     position: absolute;
     left: 3vw;
-    top: 12vw;
-    width: 80vw;
-    max-width: 90vw;
+    top: 32vw;          /* posunuto níž pod text */
+    width: 120vw;       /* výrazně větší */
+    max-width: 140vw;
     z-index: 2;
     pointer-events: none;
+    transform: rotate(45deg);   /* pootočení doprava o 45 stupňů */
   }
 }
+
