@@ -4,11 +4,11 @@ body {
 
 /* Kruh opravdu VELKÝ a VYSOKO */
 .circle-hero-wrap {
-  width: 3800vw;
+  width: 3600vw;
   max-width: 800px;
   min-width: 300px;
   aspect-ratio: 1/1;
-  margin: 10vh auto 0 auto; /* POSUNUTO NÍŽ! */
+  margin: 0vh auto 0 auto; /* POSUNUTO NÍŽ! */
   position: relative;
   display: flex;
   align-items: center;
@@ -57,8 +57,8 @@ body {
 /* Fotka týmu větší! */
 .team-photo-wrap {
   flex-shrink: 0;
-  min-width: 320px;   /* větší min-width */
-  max-width: 540px;   /* větší max-width */
+  min-width: 400px;   /* větší min-width */
+  max-width: 600px;   /* větší max-width */
   width: 40vw;        /* větší v % */
   display: flex;
   align-items: center;
@@ -117,8 +117,8 @@ body {
   pointer-events: none;
 }
 .decor-under-svg {
-  width: 180%;      /* větší šířka */
-  max-width: 820px; /* větší max-width */
+  width: 230%;      /* větší šířka */
+  max-width: 1100px; /* větší max-width */
   opacity: 0.28;
   position: absolute;
   left: 0;
